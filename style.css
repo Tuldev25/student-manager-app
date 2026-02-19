@@ -1,0 +1,99 @@
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1f2937, #111827);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+.app {
+    background: #ffffff;
+    width: 450px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #111827;
+}
+h2 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #6b7280;
+}
+.form-section {
+    margin-bottom: 20px;
+}
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    transition: 2.0s ease;
+}
+input:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6366f1;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3 ease;
+}
+button:hover {
+    background-color: #4f46e5;
+}
+#students div{
+    background: #f9fafb;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+#students button {
+    width: auto;
+    padding: 6px 10px;
+    font-size: 12px;
+    background-color: #ef4444;
+}
+#students button:hover {
+    background-color: #dc2626;
+}
+.passed {
+    color: #16a34a;
+    font-weight: 600;
+}
+.failed {
+    color: #dc2626;
+    font-weight: 600;
+}
+#summary {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #e5e7eb;
+    font-size: 14px;
+    color: #374151;
+}
+#errorMsg {
+    font-size: 13px;
+    margin-top: 5px
+}
