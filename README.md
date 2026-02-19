@@ -34,5 +34,7 @@ A simple student management application built with HTML, CSS and JavaScript.
 
 ![App Screenshot](screenshot.png)
 
+## 🌐 Live Demo
 
+👉 https://tuldev25.github.io/student-manager-app/
 Made as a practice project 
