@@ -10,6 +10,7 @@ const students = [
 const container = document.getElementById("students");
 
 function displayStudents(){
+    container.innerHTML = "";
 
     students.forEach(function(student, index) {
     const div = document.createElement("div");
@@ -29,6 +30,7 @@ function displayStudents(){
         students.splice(index, 1);
         container.innerHTML = "";
         displayStudents();
+        toggleEmptyMessage();
     });
     div.appendChild(deleteBtn);
     container.appendChild(div);
@@ -50,10 +52,12 @@ function displayStudents(){
     const admisdiv = document.createElement("div");
     admisdiv.textContent = "Admis : " + passedStudents.length;
     container.appendChild(admisdiv);
-    
+
+    toggleEmptyMessage();
 
     }
     displayStudents();
+    toggleEmptyMessage();
 
 
 
@@ -75,7 +79,20 @@ function displayStudents(){
         document.getElementById("nameInput").focus();
         container.innerHTML = "";
         displayStudents();
+        toggleEmptyMessage();
 
     });
+
+    function toggleEmptyMessage() {
+        const list = document.getElementById("students")
+        const message = document.getElementById("emptyMessage")
+
+        if (students.length === 0) {
+            message.style.display = "block";
+        }
+        else {
+            message.style.display = "none"
+        }
+    }
 
     

@@ -97,3 +97,11 @@ button:hover {
     font-size: 13px;
     margin-top: 5px
 }
+#emptyMessage {
+    text-align: center;
+    color: gray;
+    margin-top: 20px;
+    font-style: italic;
+    display: none;
+    
+}
